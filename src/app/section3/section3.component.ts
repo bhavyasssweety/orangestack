@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./section3.component.css']
 })
 export class Section3Component implements OnInit {
+  isReadMore = true
 
+  showText() {
+     this.isReadMore = !this.isReadMore
+  }
   constructor() { }
 
   ngOnInit(): void {
+      
   }
 
 }
