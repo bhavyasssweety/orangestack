@@ -1,0 +1,77 @@
+.about-container{
+    background-color: #FFECD7;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3% 15%;
+    margin: 0;
+}
+.about-img{
+    flex: 1;
+}
+.image{
+    height: 400px;
+    width: auto;
+    border-radius: 20px;
+}
+.about-content{
+    flex: 1;
+}
+.heading{
+    font-size: 25px;
+    font-family: poppins;
+    font-weight: 500;
+    margin: 15px 0px;
+}
+.content{
+    font-size: 16px;
+    font-family: poppins;
+    font-weight: 300;
+    margin:15px 0px;
+}
+.button{
+    cursor: pointer;
+    background-color: #EE6D24;
+    color: white;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-family: poppins;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.section-heading{
+ font-size: 30px;
+ font-family: poppins;
+ font-weight: 600;
+ margin: 2% 15% ;
+
+}
+
+.contact-container{
+    background-color: #FFECD7;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3% 15%;
+    margin: 0;
+}
+.contact-img{
+    flex: 1;
+}
+
+.contact-content{
+    flex: 1;
+}
+
+.sub-heading{
+    font-size: 22px;
+    font-family: poppins;
+    font-weight: 400;
+    margin: 15px 0px;
+}
+.dropdown{
+    transform: rotate(90deg);
+}
