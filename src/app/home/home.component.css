@@ -46,7 +46,7 @@
  font-size: 30px;
  font-family: poppins;
  font-weight: 600;
- margin: 2% 15% ;
+ margin: 2% 10% ;
 
 }
 
@@ -55,7 +55,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 3% 15%;
+    padding: 3% 10%;
     margin: 0;
 }
 .contact-img{
