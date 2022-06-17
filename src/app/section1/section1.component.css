@@ -1,0 +1,54 @@
+.section1-maincontainer
+{
+    /* height: 1000px; */
+    background-image: url("/orangestack/src/assets/aboutimg.png");
+    background-color: rgb(47, 49, 49);
+
+}
+.section1-textdiv
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+    color: white;
+}
+.section1-header
+{
+    padding-top: 5%;
+    font-size: 74px;
+    font-weight: 500;
+}
+hr
+{
+    width: 20%;
+}
+.section1-paragraph
+{
+    text-align: center;
+    width: 40%;
+    padding-top: 1%;
+    font-size: 18px;
+    line-height: 30px;
+    /* font-weight: 500; */
+}
+.section1-buttondiv
+{
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+.section1-button
+{
+    padding: 10px 18px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px 2px;
+    cursor: pointer;
+    background-color: #EE6D24;
+    color: white;
+    border: 2px solid #EE6D24;
+    border-radius: 20px;
+}
