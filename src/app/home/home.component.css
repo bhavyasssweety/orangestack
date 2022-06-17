@@ -39,7 +39,7 @@
     font-weight: 500;
     border: none;
     border-radius: 10px;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .section-heading{
@@ -74,4 +74,39 @@
 }
 .dropdown{
     transform: rotate(90deg);
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form-fields{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.form-lables{
+    font-size: 16px;
+    font-weight: 300;
+    font-family: poppins;
+    margin:0px 10px;
+}
+.input-fields{
+    font-family: poppins;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin: 10px 0px;
+
+}
+.outlineButton{
+    border:1px solid #EE6D24;
+    background-color: transparent;
+    color: black;
+    font-size: 18px;
+    font-family: poppins;
+    font-weight: 300;
+    padding: 8px 25px;
+    border-radius: 10px;
+    margin-left: 15px;
 }
