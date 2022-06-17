@@ -1,16 +1,14 @@
 .section1-maincontainer
 {
     /* height: 1000px; */
-    background-image: url("../../assets/mainbgimage.png");
-    /* background-color: rgb(47, 49, 49); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: auto;
+    background-image: url("/orangestack/src/assets/aboutimg.png");
+    background-color: rgb(47, 49, 49);
+    
 
 }
 .section1-textdiv
 {
+    width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -40,7 +38,6 @@ hr
 .section1-buttondiv
 {
     padding-top: 2%;
-    padding-bottom: 5%;
 }
 .section1-button
 {
