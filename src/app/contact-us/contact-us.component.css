@@ -1,0 +1,89 @@
+.section-heading{
+    font-size: 30px;
+    font-family: poppins;
+    font-weight: 600;
+    margin: 2% 15% ;
+   
+   }
+   
+   .contact-container{
+       background-color: #FFECD7;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       padding: 3% 15%;
+       margin: 0;
+   }
+   .contact-img{
+       flex: 1;
+   }
+   
+   .contact-content{
+       flex: 1;
+   }
+   
+   .sub-heading{
+       font-size: 22px;
+       font-family: poppins;
+       font-weight: 400;
+       margin: 15px 0px;
+   }
+   .heading{
+    font-size: 22px;
+    font-family: poppins;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+.content{
+    font-size: 18px;
+    font-family: poppins;
+    font-weight: 300;
+    margin:15px 0px;
+}
+.outlineBtn{
+    cursor: pointer;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid  #EE6D24;
+    padding:10px 20px;
+    width:50%;
+}
+.button{
+    cursor: pointer;
+    background-color: #EE6D24;
+    color: white;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-family: poppins;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.image{
+    height: 400px;
+    width: auto;
+    border-radius: 20px;
+}
+.sub-section{
+    display: flex;
+    flex-direction: column;
+}
+.contact-container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3% 7%;
+    margin: 0;
+}
+.icon{
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+}
+.header-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: center;
+}
