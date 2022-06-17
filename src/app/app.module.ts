@@ -8,6 +8,11 @@ import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
 import { ClientsComponent } from './clients/clients.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
+import { Section1Component } from './section1/section1.component';
+import { Section3Component } from './section3/section3.component';
+
 
 @NgModule({
   declarations: [
@@ -16,11 +21,15 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     HomeComponent,
     ServicesComponent,
     ClientsComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    Section1Component,
+    Section3Component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
