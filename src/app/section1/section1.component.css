@@ -1,8 +1,12 @@
 .section1-maincontainer
 {
     /* height: 1000px; */
-    background-image: url("/orangestack/src/assets/aboutimg.png");
-    background-color: rgb(47, 49, 49);
+    background-image: url("../../assets/mainbgimage.png");
+    /* background-color: rgb(47, 49, 49); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: auto;
 
 }
 .section1-textdiv
