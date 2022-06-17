@@ -64,6 +64,7 @@
 
 .contact-content{
     flex: 1;
+    padding-right: 20px;
 }
 
 .sub-heading{
@@ -109,4 +110,105 @@
     padding: 8px 25px;
     border-radius: 10px;
     margin-left: 15px;
+}
+
+@media screen and (min-width:320px) and (max-width:1024px)
+{
+    .about-container{
+        background-color: #FFECD7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10% ;
+        margin: 0;
+    }
+    .about-img{
+     width: 100%;
+    }
+    .image{
+        height: auto;
+        width: 100%;
+        border-radius: 20px;
+    }
+    .about-content{
+        width: 100%;
+       
+    }
+    .heading{
+        line-height: 28px;
+    }
+    
+    .section-heading{
+     font-size: 30px;
+     font-family: poppins;
+     font-weight: 600;
+     margin: 5% 10% ;
+    
+    }
+    
+    .contact-container{
+        background-color: #FFECD7;
+        display: flex;
+        flex-direction: column;
+        flex-flow:column-reverse;
+        justify-content: center;
+        padding: 10%;
+        margin: 0;
+    }
+
+
+}
+@media screen and (min-width:1025px) and (max-width:1440px)
+{
+    .about-container{
+        background-color: #FFECD7;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 7% ;
+        margin: 0;
+    }
+    .about-img{
+     width: 100%;
+    }
+    .image{
+        height: auto;
+        width: 90%;
+        border-radius: 20px;
+    }
+    .about-content{
+        width: 100%;
+       
+    }
+    .heading{
+        line-height: 28px;
+    }
+    
+    .section-heading{
+     font-size: 30px;
+     font-family: poppins;
+     font-weight: 600;
+     margin: 5% 10% ;
+    
+    }
+    
+    .contact-container{
+        background-color: #FFECD7;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 10%;
+        margin: 0;
+    }
+}
+@media screen and (min-width:1441px) and (max-width:1800px)
+{
+    .about-container{
+        background-color: #FFECD7;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 5% ;
+        margin: 0;
+    }
 }
