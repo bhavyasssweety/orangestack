@@ -1,10 +1,11 @@
 .section1-maincontainer
 {
     /* height: 1000px; */
-    background-image: url("/orangestack/src/assets/aboutimg.png");
+    background-image: url("../../assets/mainbgimage.png");
     background-color: rgb(47, 49, 49);
-    
-
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .section1-textdiv
 {
@@ -18,7 +19,7 @@
 }
 .section1-header
 {
-    padding-top: 5%;
+    padding-top: 100px;
     font-size: 74px;
     font-weight: 500;
 }
@@ -29,27 +30,28 @@ hr
 .section1-paragraph
 {
     text-align: center;
-    width: 40%;
-    padding-top: 1%;
-    font-size: 18px;
+    width: 35%;
+    padding-top: 20px;
+    font-size: 17px;
     line-height: 30px;
     /* font-weight: 500; */
 }
 .section1-buttondiv
 {
-    padding-top: 2%;
+    padding-top: 40px;
+    padding-bottom: 100px;
 }
 .section1-button
 {
-    padding: 10px 18px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 2px 2px;
     cursor: pointer;
     background-color: #EE6D24;
     color: white;
-    border: 2px solid #EE6D24;
-    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-family: poppins;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    
 }
