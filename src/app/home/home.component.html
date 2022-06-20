@@ -18,7 +18,7 @@
 
 <div class="section-heading">Contact Us</div>
 <div class="contact-container">
-    <div class="contact-content">
+    <div *ngIf="forQuestion" class="contact-content">
         <div class="content">Let us tailor a service package that meets your needs. Tell us a little about your business, and we will get back to you with some ideas as soon as possible.</div>
         <div class="heading">IT Solutions</div>
         <div class="sub-heading">Hours</div>
@@ -39,15 +39,11 @@
         <div class="content">Monday - Friday: 9am - 5pm</div>
         <div class="content">Saturday - Sunday: Closed</div>
         <div>
-            <button class="button">For Questions or Quotes</button>
+            <button class="button" (click)="forQuestionOrQuotes()">For Questions or Quotes</button>
         </div>
     </div>
-    <div class="contact-img">
-        <img class="image" src="../../assets/contactimage.png">
-    </div>
-</div>
-
-<!-- <div class="form-container">
+        <!-- form code -->
+    <div *ngIf="!forQuestion" class="form-container contact-content">
     <div class="heading">For Questions and Quotes</div>
     <form [formGroup] = "queriesForm">
         <div class="form-fields">
@@ -63,8 +59,14 @@
             <textarea class="input-fields" placeholder="Message" formControlName="message" type="text"> </textarea>
         </div>
         <button class="button" type="submit">Send</button>
-        <button class="outlineButton">Cancel</button>
+        <button class="outlineButton" (click)="forQuestionOrQuotes()" >Cancel</button>
     </form>
-</div> -->
+</div>
+
+    <div class="contact-img">
+        <img class="image" src="../../assets/contactimage.png">
+    </div>
+</div>
+
 
 <div class="copyright">Copyright © 2022 IT Solutions - All Rights Reserved.</div>

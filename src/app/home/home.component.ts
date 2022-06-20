@@ -7,11 +7,14 @@ import { FormBuilder , Validators } from '@angular/forms';
 })
 export class HomeComponent implements OnInit {
   public selector = true
+  public forQuestion = true
 
   onSelect(){
     this.selector = !this.selector
   }
-
+  forQuestionOrQuotes(){
+    this.forQuestion=!this.forQuestion
+  }
   constructor(public fb : FormBuilder) { }
 
   queriesForm = this.fb.group({

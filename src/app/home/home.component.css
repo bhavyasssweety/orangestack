@@ -84,7 +84,8 @@
 .form-fields{
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 90%;
+    
 }
 .form-lables{
     font-size: 16px;
@@ -98,6 +99,7 @@
     border-radius: 10px;
     border: 1px solid gray;
     margin: 10px 0px;
+    background: transparent;
 
 }
 .outlineButton{

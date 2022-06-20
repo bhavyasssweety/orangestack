@@ -1,32 +1,56 @@
 <div>
 <div class="section-heading">Contact Us</div>
 <div class="contact-container">
-    <div class="contact-content">
+    <div *ngIf="forQuestion" class="contact-content">
         <div class="content">Let us tailor a service package that meets your needs. Tell us a little about your business, and we will get back to you with some ideas as soon as possible.</div>
         <div class="heading">IT Solutions</div>
         <div class="sub-heading">Hours</div>
         <div>
-            <div  class="content outlineBtn" >Opens today 9:00am - 5:00pm <span class="dropdown">></span></div>
-            <!-- <div >
-                <div class="content"  style="cursor: pointer;">Mon  9:00am - 5:00pm</div>
+            <div *ngIf="selector" (click)="onSelect()"  class="content" style="cursor: pointer;display: flex;align-items: center;">Opens today 9:00am - 5:00pm 
+                <img style="height: 20px; width: 20px;margin-left: 10px;" src="../../assets/down-arrow.png"> </div>
+            <div *ngIf=" !selector" (click)="onSelect()">
+                <div class="content"  style="cursor: pointer;display: flex;align-items: center;">Mon  9:00am - 5:00pm 
+                    <img style="height: 15px; width: 15px;margin-left: 10px;" src="../../assets/up_arrow.png"> </div>
                 <div class="content">Tues  9:00am - 5:00pm</div>
                 <div class="content">Wed  9:00am - 5:00pm</div>
                 <div class="content">Thur  9:00am - 5:00pm</div>
                 <div class="content">Fri  9:00am - 5:00pm</div>
                 <div class="content">Sat  Closed</div>
                 <div class="content">Sun  Closed</div>
-            </div> -->
+            </div>
         </div>
         <div class="content">Monday - Friday: 9am - 5pm</div>
         <div class="content">Saturday - Sunday: Closed</div>
         <div>
-            <button class="button">For Questions or Quotes</button>
+            <button class="button" (click)="forQuestionOrQuotes()">For Questions or Quotes</button>
         </div>
     </div>
+        <!-- form code -->
+    <div *ngIf="!forQuestion" class="form-container contact-content">
+    <div class="heading">For Questions and Quotes</div>
+    <form [formGroup] = "queriesForm">
+        <div class="form-fields">
+            <label class="form-lables">Name*</label>
+            <input class="input-fields" placeholder="Enter Username" formControlName="userName" type="text">
+        </div>
+        <div class="form-fields">
+            <label class="form-lables">Email*</label>
+            <input class="input-fields" placeholder="Enter Email" formControlName="email" type="email">
+        </div>
+        <div class="form-fields">
+            <label class="form-lables">Message</label>
+            <textarea class="input-fields" placeholder="Message" formControlName="message" type="text"> </textarea>
+        </div>
+        <button class="button" type="submit">Send</button>
+        <button class="outlineButton" (click)="forQuestionOrQuotes()" >Cancel</button>
+    </form>
+</div>
+
     <div class="contact-img">
         <img class="image" src="../../assets/contactimage.png">
     </div>
 </div>
+
 
 <div class="contact-container2">
     <div class="sub-section">
