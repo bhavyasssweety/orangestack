@@ -1,167 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="section3-maincontainer">
-        <div class="section3-heading">
-            Our Services
-        </div>
-        <div class="section3-cards">
-            <div class="section3-card">
-                <div class="section3-cardheading">Staffing solution</div>
-                <div class="list-wrapper">
+      <div class="section3-heading">Our Services</div>
+      <div class="section3-cards">
+        <div class="section3-card" [ngClass]="{ cardheight: isReadMore }">
+          <div class="section3-cardheading">Staffing solution</div>
+          <div class="list-wrapper">
+            <div class="red-line"></div>
 
-                        <div class="red-line"></div>
-                    
-                    <div class="list-item-wrapper">
-                        <div class="list-bullet"></div>
-                        <div class="list-item">
-                            <div class="list-text">Its process driven recruitment methodology</div>
-                        </div>
-                    </div>
-                    <div class="list-space"></div>
-                    <div class="list-item-wrapper">
-                        <div class="list-bullet"></div>
-                        <div class="list-item">
-                            <div class="list-text">24/7 Recruiting effort : Recruiting Operations from India & USA</div>
-                        </div>
-                    </div>
-                    <div class="list-space"></div>
-                    <div class="list-item-wrapper">
-                        <div class="list-bullet"></div>
-                        <div class="list-item">
-                            <div class="list-text">Perform all the various types of staffing solutions : Permanent Hiring, Contract Hiring & Project Staffing</div>
-                        </div>
-                    </div>
-                    <div class="list-space"></div>
-                    <div class="list-item-wrapper">
-                        <div class="list-bullet"></div>
-                        <div class="list-item">
-                            <div class="list-text">Global representation (Offices in USA, India)</div>
-                        </div>
-                    </div>
-                    <div class="list-space"></div>
-                    <div class="list-item-wrapper">
-                        <div class="list-bullet"></div>
-                        <div class="list-item">
-                            <div class="list-text">Competitively Priced , Response Time</div>
-                        </div>
-                    </div>
-                    <div class="list-space"></div>
-                    <div class="list-item-wrapper">
-                        <div class="list-bullet"></div>
-                        <div class="list-item">
-                            <div class="list-text">Detailed screening and validation of candidature</div>
-                        </div>
-                        <div class="white-line"></div>
-                    </div>
-                    <div class="list-space"></div>
-                </div>        
-                <div class="section3-cardshowmore">Show More >></div>
+            <div class="list-item-wrapper">
+              <div class="list-bullet"></div>
+              <div class="list-item">
+                <div class="list-text">
+                  Its process driven recruitment methodology
                 </div>
-                <div class="section3-card">
-                    <div class="section3-cardheading">Enterprise Resource Planning</div>
-                    <div class="list-wrapper">
-    
-                        <div class="red-line"></div>
-                        
-                        <div class="list-item-wrapper">
-                            <div class="list-bullet"></div>
-                            <div class="list-item">
-                                <div class="list-text">Our Enterprise Resource Planning (ERP) packages comprise solutions that best fit our client's needs. 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-space"></div>
-                        <div class="list-item-wrapper">
-                            <div class="list-bullet"></div>
-                            <div class="list-item">
-                                <div class="list-text">SaviTech understand the significance of balancing the quality of packaged ERP solutions with the flexibility that the ERP implementation ensures. 
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-space"></div>
-                        <div class="list-item-wrapper">
-                            <div class="list-bullet"></div>
-                            <div class="list-item">
-                                <div class="list-text">Our ERP solutions help streamline and align our clients' key business processes.</div>
-                            </div>
-                        </div>
+              </div>
+            </div>
+            <div class="list-space"></div>
+            <div class="list-item-wrapper">
+              <div class="list-bullet"></div>
+              <div class="list-item">
+                <div class="list-text">
+                  24/7 Recruiting effort : Recruiting Operations from India &
+                  USA
+                </div>
+              </div>
+            </div>
+            <div class="list-space"></div>
+            <div class="list-item-wrapper">
+              <div class="list-bullet"></div>
+              <div class="list-item">
+                <div class="list-text">
+                  Perform all the various types of staffing solutions :
+                  Permanent Hiring, Contract Hiring & Project Staffing
+                </div>
+              </div>
+            </div>
+            <div class="list-space"></div>
+            <div class="list-item-wrapper">
+              <div class="list-bullet"></div>
+              <div class="list-item">
+                <div class="list-text">
+                  Global representation (Offices in USA, India)
+                </div>
+              </div>
+            </div>
+            <div class="list-space"></div>
+            <div class="list-item-wrapper">
+              <div class="list-bullet"></div>
+              <div class="list-item">
+                <div class="list-text">
+                  Competitively Priced , Response Time
+                </div>
+              </div>
+            </div>
+            <div class="list-space"></div>
+            <div class="list-item-wrapper">
+              <div class="list-bullet"></div>
+              <div class="list-item">
+                <div class="list-text">
+                  Detailed screening and validation of candidature to ensure highest level of quality
+                </div>
+              </div>
+              <div
+                class="white-line"
+                [ngClass]="{ displayed: isReadMore }"
+              ></div>
+            </div>
+            <div class="list-space"></div>
 
-                        <div class="list-space"></div>
-                        <div class="list-item-wrapper">
-                            <div class="list-bullet"></div>
-                            <div class="list-item">
-                                <div class="list-text">We have increased productivity for Fortune 1000 clients across the globe in industry-best ERP packages such as:
-            <div> SAP
-    Oracle
-    PeopleSoft (and JD Edwards)</div>
-                                   </div>
-                            </div>
-                            <div class="white-line"></div>
-                        </div>
-                    </div>        
-                    <div class="section3-cardshowmore">Show More >></div>
+            <div class="display" [ngClass]="{ displayed: isReadMore }">
+              <div class="list-wrapper">
+                <div class="red-line"></div>
+                <div class="list-item-wrapper">
+                  <div class="list-bullet"></div>
+                  <div class="list-item">
+                    <div class="list-text">
+                        Strong candidate - recruiter relationship
                     </div>
-                    <div class="section3-card">
-                        <div class="section3-cardheading">Packaged Application</div>
-                        <div class="list-wrapper">
-        
-                            <div class="red-line"></div>
-                            
-                            <div class="list-item-wrapper">
-                                <div class="list-bullet"></div>
-                                <div class="list-item">
-                                    <div class="list-text">Its process driven recruitment methodology</div>
-                                </div>
-                            </div>
-                            <div class="list-space"></div>
-                            <div class="list-item-wrapper">
-                                <div class="list-bullet"></div>
-                                <div class="list-item">
-                                    <div class="list-text">24/7 Recruiting effort : Recruiting Operations from India & USA</div>
-                                </div>
-                            </div>
-                            <div class="list-space"></div>
-                            <div class="list-item-wrapper">
-                                <div class="list-bullet"></div>
-                                <div class="list-item">
-                                    <div class="list-text">Perform all the various types of staffing solutions : Permanent Hiring, Contract Hiring & Project Staffing</div>
-                                </div>
-                            </div>
-                            <div class="list-space"></div>
-                            <div class="list-item-wrapper">
-                                <div class="list-bullet"></div>
-                                <div class="list-item">
-                                    <div class="list-text">Global representation (Offices in USA, India)</div>
-                                </div>
-                            </div>
-                            <div class="list-space"></div>
-                            <div class="list-item-wrapper">
-                                <div class="list-bullet"></div>
-                                <div class="list-item">
-                                    <div class="list-text">Competitively Priced , Response Time</div>
-                                </div>
-                            </div>
-                            <div class="list-space"></div>
-                            <div class="list-item-wrapper">
-                                <div class="list-bullet"></div>
-                                <div class="list-item">
-                                    <div class="list-text">Detailed screening and validation of candidature</div>
-                                </div>
-                                <div class="white-line"></div>
-                            </div>
-                            <div class="list-space"></div>
-                        </div>        
-                        <div class="section3-cardshowmore">Show More >></div>
-                        </div>
+                  </div>
+                  <!-- <div class="white-line"></div> -->
+                </div>
+                <div class="list-item-wrapper">
+                  <div class="list-bullet"></div>
+                  <div class="list-item">
+                    <div class="list-text">
+                        Strong and effective Referral Program
+                    </div>
+                  </div>
+                  <!-- <div class="white-line"></div> -->
+                </div>
+                <div class="list-item-wrapper">
+                  <div class="list-bullet"></div>
+                  <div class="list-item">
+                    <div class="list-text">
+                        Continuous hand-holding process with candidates.
+                    </div>
+                  </div>
+                  <div class="white-line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section3-cardshowmore" (click)="showText()">
+            {{ isReadMore ? "Show Less >>" : "Show More >>" }}
+          </div>
         </div>
+        <div class="section3-card" [ngClass]="{ cardheight2: isReadMore2 }">
+            <div class="section3-cardheading">Enterprise Resource Planning</div>
+            <div class="list-wrapper">
+              <div class="red-line"></div>
+  
+              <div class="list-item-wrapper">
+                <div class="list-bullet"></div>
+                <div class="list-item">
+                  <div class="list-text">
+                    Our Enterprise Resource Planning (ERP) packages comprise solutions that best fit our client's needs.
+                  </div>
+                </div>
+              </div>
+              <div class="list-space"></div>
+              <div class="list-item-wrapper">
+                <div class="list-bullet"></div>
+                <div class="list-item">
+                  <div class="list-text">
+                    SaviTech understand the significance of balancing the quality of packaged ERP solutions with the flexibility that the ERP implementation ensures.
+                  </div>
+                </div>
+              </div>
+              <div class="list-space"></div>
+              <div class="list-item-wrapper">
+                <div class="list-bullet"></div>
+                <div class="list-item">
+                  <div class="list-text">
+                    Our ERP solutions help streamline and align our clients' key business processes.
+                  </div>
+                </div>
+              </div>
+              <div class="list-space"></div>
+              <div class="list-item-wrapper">
+                <div class="list-bullet"></div>
+                <div class="list-item">
+                  <div class="list-text">
+                    We have increased productivity for Fortune 1000 clients across the globe in industry-best ERP packages such as: SAP Oracle PeopleSoft (and JD Edwards)
+                  </div>
+                </div>
+                <div
+                  class="white-line"
+                  [ngClass]="{ displayed2: isReadMore2 }"
+                ></div>
+              </div>
+              <div class="list-space"></div>
+  
+              <div class="display" [ngClass]="{ displayed2: isReadMore2 }">
+                <div class="list-wrapper">
+                  <div class="red-line"></div>
+                  <div class="list-item-wrapper">
+                    <div class="list-bullet"></div>
+                    <div class="list-item">
+                      <div class="list-text">
+                        We offer services in all ERP functional areas.
+                      </div>
+                    </div>
+                    <!-- <div class="white-line"></div> -->
+                  </div>
+                  <div class="list-item-wrapper">
+                    <div class="list-bullet"></div>
+                    <div class="list-item">
+                      <div class="list-text">
+                        Areas including Financials, Projects, Sales and Distribution, HRMS and Manufacturing.
+                      </div>
+                    </div>
+                    <div class="white-line"></div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="list-space" [ngClass]="{ displayed2: !isReadMore2 }"></div>
+            <div class="section3-cardshowmore" (click)="showText2()">
+              {{ isReadMore2 ? "Show Less >>" : "Show More >>" }}
+            </div>
+          </div>
+          <div class="section3-card" [ngClass]="{ cardheight3: isReadMore3 }">
+            <div class="section3-cardheading">Staffing solution</div>
+            <div class="list-wrapper">
+              <div class="red-line"></div>
+  
+              <div class="list-item-wrapper">
+                <div class="list-bullet"></div>
+                <div class="list-item">
+                  <div class="list-text">
+                    Its process driven recruitment methodology
+                  </div>
+                </div>
+              </div>
+              <div class="list-space"></div>
+              <div class="list-item-wrapper">
+                <div class="list-bullet"></div>
+                <div class="list-item">
+                  <div class="list-text">
+                    24/7 Recruiting effort : Recruiting Operations from India &
+                    USA
+                  </div>
+                </div>
+              </div>
+              <div class="list-space"></div>
+              <div class="list-item-wrapper">
+                <div class="list-bullet"></div>
+                <div class="list-item">
+                  <div class="list-text">
+                    Perform all the various types of staffing solutions :
+                    Permanent Hiring, Contract Hiring & Project Staffing
+                  </div>
+                </div>
+              </div>
+              <div class="list-space"></div>
+              <div class="list-item-wrapper">
+                <div class="list-bullet"></div>
+                <div class="list-item">
+                  <div class="list-text">
+                    Global representation (Offices in USA, India)
+                  </div>
+                </div>
+              </div>
+              <div class="list-space"></div>
+              <div class="list-item-wrapper">
+                <div class="list-bullet"></div>
+                <div class="list-item">
+                  <div class="list-text">
+                    Competitively Priced , Response Time
+                  </div>
+                </div>
+              </div>
+              <div class="list-space"></div>
+              <div class="list-item-wrapper">
+                <div class="list-bullet"></div>
+                <div class="list-item">
+                  <div class="list-text">
+                    Detailed screening and validation of candidature
+                  </div>
+                </div>
+                <div
+                  class="white-line"
+                  [ngClass]="{ displayed3: isReadMore3 }"
+                ></div>
+              </div>
+              <div class="list-space"></div>
+  
+              <div class="display" [ngClass]="{ displayed3: isReadMore3 }">
+                <div class="list-wrapper">
+                  <div class="red-line"></div>
+                  <div class="list-item-wrapper">
+                    <div class="list-bullet"></div>
+                    <div class="list-item">
+                      <div class="list-text">
+                        Detailed screening and validation of candidature
+                      </div>
+                    </div>
+                    <!-- <div class="white-line"></div> -->
+                  </div>
+                  <div class="list-item-wrapper">
+                    <div class="list-bullet"></div>
+                    <div class="list-item">
+                      <div class="list-text">
+                        Detailed screening and validation of candidature
+                      </div>
+                    </div>
+                    <!-- <div class="white-line"></div> -->
+                  </div>
+                  <div class="list-item-wrapper">
+                    <div class="list-bullet"></div>
+                    <div class="list-item">
+                      <div class="list-text">
+                        Detailed screening and validation of candidature
+                      </div>
+                    </div>
+                    <div class="white-line"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section3-cardshowmore" (click)="showText3()">
+              {{ isReadMore3 ? "Show Less >>" : "Show More >>" }}
+            </div>
+          </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
-
